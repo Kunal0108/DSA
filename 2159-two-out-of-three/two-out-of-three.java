@@ -5,26 +5,26 @@ class Solution {
         Set<Integer> set2 = new HashSet<>();
         Set<Integer> set3 = new HashSet<>();
 
-        for (int num : nums1){
-             set1.add(num);
+        for(int num : nums1) {
+            set1.add(num);
         }
-
-        for (int num : nums2){
-             set2.add(num);
+        for(int num : nums2) {
+            set2.add(num);
         }
-
-        for (int num : nums3){
-             set3.add(num);
+        for(int num : nums3) {
+            set3.add(num);
         }
 
         Set<Integer> all = new HashSet<>();
+
         all.addAll(set1);
         all.addAll(set2);
         all.addAll(set3);
 
         List<Integer> result = new ArrayList<>();
 
-        for(int num : all){
+        for(int num : all) {
+
             int count = 0;
 
             if(set1.contains(num)) count++;
